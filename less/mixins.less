@@ -1,1 +1,25 @@
 // Mixins Here
+.flexsimp(@just, @align){
+    display: flex;
+    justify-content: @just;
+    align-items: @align;   
+}
+
+.flex(@dir, @just, @align){
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @just;
+    align-items: @align;
+}
+
+.btnsize(@w, @h, @fs){
+    width: @w;
+    height: @h;
+    font-size: @fs;
+}
+
+.btnstyle(@bg, @fc, @br){
+    background: @bg;
+    color: @fc;
+    border-radius: @br;
+}
